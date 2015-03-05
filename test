@@ -1,9 +1,0 @@
-<html>
- <head>
-  <title>Testing external CSS</title>
-  <link rel="stylesheet" href="testCss.css">
- </head>
- <body>
-  Hello, world!
- </body>
-</html>
