@@ -1,0 +1,38 @@
+<html>
+ <head>
+  <style>
+.inputs
+{
+width: 10%;
+}
+  </style>
+  <title>Pythagoras</title>
+  <meta name="Author" content="Anakin Thanainantha">
+  <meta name="Keywords" content="Pythagoras, triangle, pythagoras, pythagorus">
+  <meta name="Descriptions" content="Calculate Pythagorus with this site">
+ </head>
+ <body>
+  <input type="text" id="firstNum" class="inputs">
+  <input type="text" id="secondNum" class="inputs">
+  <input type="button" onclick="writePythagoras()">
+  <br>
+  <br>
+  <p id="result">
+  </p>
+  <script>
+function pythagoras(a, b)
+{
+ var c = (a * a) + (b * b);
+ return Math.sqrt(c);
+}
+
+function writePythagoras()
+{
+ var first = document.getElementById("firstNum").value;
+ var second = document.getElementById("secondNum").value;
+ var res = pythagoras(first, second);
+ document.getElementById("result").innerHTML = res;
+}
+  </script>
+ </body>
+</html>
